@@ -1,10 +1,10 @@
 
-h1 {
-  font-family: "Futura-pt";
+h1 h2 h3 h4 h5 h6 p body{
+  font-family: "Futura" !important;
 }
 
 .header {
-  border-bottom: 1px solid #CCC;
+  /*border-bottom: 1px solid #CCC;*/
   overflow-y: auto;
   width: 100%;
   position: fixed;
@@ -15,7 +15,7 @@ h1 {
 }
 
 .footer {
-  border-top: 1px solid #CCC;
+  /*border-top: 1px solid #CCC;*/
   overflow-y: auto;
   width: 100%;
   position: fixed;
@@ -30,24 +30,34 @@ ul {
   text-align: center;
 }
 
-li {
+ li {
   color: "black";
   display: inline-block;
-  font-family: 'Futura-pt', sans-serif;
+  font-family: 'Futura', sans-serif;
   font-size: 16px;
-  text-align: left;
+  text-align: center;
   font-weight: 300;
   text-transform: uppercase;
-  padding: 0 40px;
+  padding: 0 20px;
+  border-bottom: 1px solid white;
+  vertical-align: middle;
+}
+
+.header-list:hover {
+  color: #CCC;
+  /*border-bottom: 1px solid #CCC;*/
+  text-decoration: none !important;
 }
 
 li:hover {
   color: #CCC;
+  text-decoration:none !important;
 }
 
-.logo{
-  position: fixed;
+#header-logo:hover {
+  opacity: 0.3;
 }
+
 
 .main-page {
   position: fixed;
@@ -56,3 +66,47 @@ li:hover {
   width: 1000px;
   height:500px;
 }
+
+.profile_picture {
+  border-radius:50%;
+  height:500px;
+  width:490px;
+  margin: 0;
+  padding: 0;
+}
+
+.main_logo {
+  width:500px;
+  height:500px;
+  position:absolute;
+  top:93px;
+  left:500px;
+  /*top: 0px;*/
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #CCC;
+  text-decoration: none;
+}
+
+
+
+/*body {
+  background: url(background_photo.JPG) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover:
+  background-size: cover;
+}*/

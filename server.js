@@ -7,13 +7,13 @@ var app = express();
 app.use(express.static('public'));
 
 // CSS
-app.use('/static/css/foundation/', express.static(__dirname + '/node_modules/foundation-sites/dist/css'));
+app.use('/static/css/bootstrap/', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 app.use('/static/css/jquery-ui/', express.static(__dirname + '/node_modules/jquery-ui-dist'));
 app.use('/static/css/font-awesome/', express.static(__dirname + '/node_modules/font-awesome'));
 
 // JS Libraries
 app.use('/scripts/', express.static(__dirname + '/node_modules'));
-app.use('/static/js/foundation/', express.static(__dirname + '/node_modules/foundation-sites/dist/js'));
+app.use('/static/js/bootstrap/', express.static(__dirname + '/node_modules/bootstrap/dist/js'));
 app.use('/static/js/jquery/', express.static(__dirname + '/node_modules/jquery/dist'));
 app.use('/static/js/swagger-parser/', express.static(__dirname + '/node_modules/swagger-parser/dist'));
 app.use('/static/js/jsonld/', express.static(__dirname + '/node_modules/jsonld/js'));
