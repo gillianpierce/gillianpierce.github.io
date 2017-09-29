@@ -1,11 +1,6 @@
 
 $(document).ready(function(){
  
- $(".resume-intro").hide();
-
- $( "#intro" ).mouseenter(function(){
-  $(".resume-intro").show("slow");
- } );
 
  $(".download").click(function(e){
  	e.preventDefault();  
