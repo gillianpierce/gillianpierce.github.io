@@ -1,5 +1,7 @@
 
 $(document).ready(function(){
+ 
+ $(".resume-intro").hide();
 
  $( "#intro" ).mouseenter(function(){
   $(".resume-intro").fadeIn("slow");
