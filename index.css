@@ -214,6 +214,7 @@ a:hover {
   font-family: "Lora", serif;
   margin-bottom: 0;
   padding-bottom: 5px;
+  font-size: smaller;
 }
 
 .resume h5, .resume h4 {
