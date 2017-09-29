@@ -224,6 +224,10 @@ a:hover {
   padding-bottom: 10px;
 }
 
+.resume {
+  padding:0;
+}
+
 .download-resume {
     background-color: rgba(255, 0, 0, 0);
     border: 2px solid black;
