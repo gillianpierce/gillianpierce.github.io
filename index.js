@@ -1,7 +1,9 @@
 
 $(document).ready(function(){
 
- $( ".resume-intro" ).fadeIn( "slow" );
+ $( "#intro" ).mouseenter(function(){
+  $(".resume-intro").fadeIn("slow");
+ } );
 
  $(".download").click(function(e){
  	e.preventDefault();  
