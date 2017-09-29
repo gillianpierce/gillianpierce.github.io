@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 
-
+ $( ".resume-intro" ).fadeIn( "slow" );
 
  $(".download").click(function(e){
  	e.preventDefault();  
