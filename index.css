@@ -1,18 +1,54 @@
-
 h1, h2, h3, h4, h5 {
-  font-family: "Futura" ;
+  font-family: "Comfortaa" ;
+  margin-bottom: 25px;
 }
 
 html, body {
   height: 100%;
+  position: relative;
 }
 
-body {
-  background-color: #c8d9f4;
+.name-header, .degree-header, .tech-header, .resume-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 15px;
 }
 
-.headings {
-  font-family: "Futura", sans-serif;
+.degree-header {
+  font-family: "Merriweather", serif;
+}
+
+.name-header, .tech-header, .resume-header {
+  font-family: "Comfortaa";
+  font-size: -webkit-xxx-large;
+}
+
+
+.resume-button {
+  margin: 15px;
+}
+
+.resume-button:hover *{
+  color: rgb(16, 68, 20);
+}
+
+.resume-button-text, .resume-button-icon {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.resume-button-text {
+  margin-left: 5px;
+}
+
+.resume-button * {
+  font-family: "Comfortaa";
+  font-size: x-large;
+  color: white;
+}
+
+.synopsis {
+  font-family: "Merriweather";
 }
 
 .header {
@@ -96,7 +132,7 @@ a:hover {
 .paralax {
   /* Set a specific height */
   min-height: 500px;
-
+  height: 100%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -119,8 +155,6 @@ a:hover {
 
 .manarola {
   background-image: url("manarola.JPG");
-  background-size: contain;
-  background-position: left;
 }
 
 .top {
@@ -164,13 +198,6 @@ a:hover {
 }
 
 
-.resume-header {
-  text-transform: uppercase;
-  background-image: url("norway.jpg");
-  font-family: "Futura";
-  color: white;
-}
-
 
 .edu {
   list-style-type: disc;
@@ -195,7 +222,7 @@ a:hover {
   border-bottom: solid 2px white;
 }
 
-.body-text {
+p {
   font-family: "Lora", serif;
 }
 
@@ -214,10 +241,9 @@ a:hover {
   font-family: "Lora", serif;
   margin-bottom: 0;
   padding-bottom: 5px;
-  font-size: smaller;
 }
 
-.resume h5, .resume h4, .resume h6 {
+.resume h5, .resume h4 {
   font-family: "Lora", serif;
 }
 
@@ -225,6 +251,19 @@ a:hover {
   padding-bottom: 10px;
 }
 
+.social {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+  color: white;
+}
+
+.social:hover {
+  border-top: 5px white solid;
+  border-bottom: 5px white solid;
+}
 
 .download-resume {
     background-color: rgba(255, 0, 0, 0);
@@ -246,9 +285,35 @@ a:hover {
   text-decoration-style: bold;
 }
 
-/*body {
-  background: url(background_photo.JPG) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover:
-  background-size: cover;
-}*/
+.sidenav {
+  height: 100%;
+  position: fixed;
+  width: auto;
+  z-index:1;
+  top: 0;
+  right:0;
+  background: transparent;
+}
+
+.sidenav ol{
+  position: relative;
+  list-style-type: none;
+  vertical-align: middle;
+  top:50%;
+  transform: translateY(-50%);
+  background: transparent;
+}
+
+
+
+.active {
+  fill: white;
+  background: transparent;
+  border: none;
+}
+
+.inactive {
+  fill: transparent;
+  background: transparent;
+  border: none;
+}

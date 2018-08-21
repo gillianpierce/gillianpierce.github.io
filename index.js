@@ -1,6 +1,5 @@
 
 $(document).ready(function(){
-<<<<<<< HEAD
 
 	var lastScrollTop = $(window).scrollTop();
 	var list = $('#list').children();
@@ -42,9 +41,6 @@ $(document).ready(function(){
    		lastScrollTop = st;
    	}
 	});
-=======
- 
->>>>>>> 12abf9b25dc986b7b171912029e8737cbf436dbf
 
 	// $(".nav-element.inactive").hover(function(){
 	// 	$(this).removeClass("inactive").addClass("active");
