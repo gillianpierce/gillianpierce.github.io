@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5 {
 html, body {
   height: 100%;
   position: relative;
-  -ms-overflow-style: none;  
+  -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
 }
 
@@ -157,6 +157,7 @@ a:hover {
 
 .manarola {
   background-image: url("manarola.JPG");
+  margin-left: 0;
 }
 
 
@@ -167,16 +168,19 @@ a:hover {
 .middle {
   background-color: rgba(232, 177, 167, 0.7);
   color: white;
+  margin-left: 0;
 }
 
 .middle-bottom {
   background-color: rgb(16, 68, 20);
   color:white;
+  margin-left:0;
 }
 
 .bottomer {
   background-color: rgb(135, 22, 22);
   color:white;
+  margin-left: 0;
 }
 
 .bottomest {
