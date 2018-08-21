@@ -4,16 +4,16 @@ $(document).ready(function(){
 	var lastScrollTop = $(window).scrollTop();
 	var list = $('#list').children();
 	for(var i = 0, len = list.length; i < len; i++){
-		console.log($("#"+list[i].id).data("parent"))
+		//console.log($("#"+list[i].id).data("parent"))
 		if($("#"+$("#"+list[i].id).data("parent")).isInViewport()){
 			var current = $("#"+list[i].id);
 			current.addClass("active").removeClass("inactive");
 			break;
 		}
 	}
-	console.log(list);
+	//console.log(list);
 	$(window).scroll(function(){
-		console.log($(window).scrollTop())
+		//console.log($(window).scrollTop())
 		if($(window).scrollTop()==0){
 			current.removeClass("active").addClass("inactive");
 			$("#"+$("#list").children()[0].id).removeClass("inactive").addClass("active");
