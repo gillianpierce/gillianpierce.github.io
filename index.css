@@ -6,6 +6,8 @@ h1, h2, h3, h4, h5 {
 html, body {
   height: 100%;
   position: relative;
+  -ms-overflow-style: none;  
+  overflow: -moz-scrollbars-none;
 }
 
 .name-header, .degree-header, .tech-header, .resume-header {
@@ -312,4 +314,8 @@ p {
   fill: transparent;
   background: transparent;
   border: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
