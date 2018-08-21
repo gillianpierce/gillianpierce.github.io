@@ -1,14 +1,32 @@
 
-h1 h2 h3 h4 h5 h6 p body {
-  font-family: "Futura" !important;
+h1, h2, h3, h4, h5 {
+  font-family: "Futura" ;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #c8d9f4;
+}
+
+.headings {
+  font-family: "Futura", sans-serif;
 }
 
 .header {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  text-align:center;
+  font-family: "Futura";
+  border-bottom: 1px solid black;
+  background-color: #c8d9f4;
 }
 
 .footer {
   margin-top:30px;
+  border-top: 1px solid black;
 }
 
 ul {
@@ -18,7 +36,6 @@ ul {
 }
 
  .header-list {
-  color: "black";
   display: inline-block;
   font-family: 'Futura', sans-serif;
   font-size: 16px;
@@ -26,12 +43,12 @@ ul {
   font-weight: 300;
   text-transform: uppercase;
   padding: 0 20px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #c8d9f4;
   vertical-align: middle;
 }
 
 .footer-list {
- color: "black";
+ color: black;
  display: inline-block;
  font-family: 'Futura', sans-serif;
  font-size: 16px;
@@ -44,48 +61,22 @@ ul {
 }
 
 .header-list:hover {
-  color: #CCC;
+  color: white;
   /*border-bottom: 1px solid #CCC;*/
   text-decoration: none !important;
 }
 
 .footer-list:hover {
-  color: #CCC;
+  color: white;
   text-decoration:none !important;
 }
 
-#header-logo:hover {
+.header-logo:hover {
   opacity: 0.3;
 }
 
 
-.main-page {
-  position: fixed;
-  top: 15%;
-  left: 20%;
-  width: 1000px;
-  height:500px;
-}
 
-.profile_picture {
-  border-radius:50%;
-  height:500px;
-  width:490px;
-  margin: 0;
-  padding: 0;
-}
-
-.main_logo {
-  width:500px;
-  height:500px;
-  position:absolute;
-  top:93px;
-  left:500px;
-  /*top: 0px;*/
-  float: right;
-  margin: 0;
-  padding: 0;
-}
 
 a:link {
   color: black;
@@ -98,7 +89,7 @@ a:visited {
 }
 
 a:hover {
-  color: #CCC;
+  color: white;
   text-decoration: none;
 }
 
@@ -113,10 +104,28 @@ a:hover {
   background-size: cover;
 }
 
-.top {
+.paralax-header {
+  /* Set a specific height */
+  min-height: 700px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family:"Futura";
+  text-align:center;
+}
+
+.manarola {
   background-image: url("manarola.JPG");
+  background-size: contain;
+  background-position: left;
+}
+
+.top {
+  background-image: url("header-photo.png");
   color: white;
-  font-size: 60px;
 }
 
 .bottom {
@@ -139,7 +148,7 @@ a:hover {
 }
 
 .bottomest {
-  background-image: url("canal.JPG");
+  background-image: url("canal.jpg");
 }
 
 .bottom-bottom {
@@ -147,46 +156,96 @@ a:hover {
 }
 
 .about-me {
-  font-family: "Futura";
-  text-align: center;
+  font-family: "Lora", serif;
 }
 
 .titles {
   text-transform: uppercase;
 }
 
-.resume {
-  font-family: "Futura";
-  /*text-align:center;*/
-}
 
 .resume-header {
   text-transform: uppercase;
-  background-image: url("norway.JPG");
+  background-image: url("norway.jpg");
   font-family: "Futura";
   color: white;
 }
 
-.download {
-    background-color: rgba(255, 0, 0, 0);
-    border: 2px solid white;
-    color: white;
-    padding: 14px 40px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-}
 
 .edu {
   list-style-type: disc;
   text-align: left;
 }
 
-.resume-sidebar {
-  width: 25% ;
+
+
+.name {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: -webkit-xxx-large;
+}
+
+.degree {
+  font-size: x-large;
+  letter-spacing: 2px;
+}
+
+.selected-page.header-list {
+  color: white;
+  border-bottom: solid 2px white;
+}
+
+.body-text {
+  font-family: "Lora", serif;
+}
+
+.resume-intro{
+  font-family: 'Lora', serif;
+  text-align: center;
+  font-size: -webkit-xxx-large;
+}
+
+.resume h3{
+  font-family: "Futura", sans-serif;
+  text-transform: uppercase;
+}
+
+.resume p {
+  font-family: "Lora", serif;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  font-size: smaller;
+}
+
+.resume h5, .resume h4, .resume h6 {
+  font-family: "Lora", serif;
+}
+
+.row .resume {
+  padding-bottom: 10px;
+}
+
+
+.download-resume {
+    background-color: rgba(255, 0, 0, 0);
+    border: 2px solid black;
+    color: black;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.viewport {
   height: 100%;
 }
+
+.mouse-over {
+  color: white;
+  text-decoration-style: bold;
+}
+
 /*body {
   background: url(background_photo.JPG) no-repeat center center fixed;
   -webkit-background-size: cover;
